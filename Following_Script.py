@@ -1,5 +1,5 @@
 import tweepy
-"""Follows companies stored in handles.txt
+"""Follows twitter handles stored in handles.txt
 @author Shyam Thiagarajan
 """
 
