@@ -5,7 +5,7 @@ A script that quickly follows Twitter handles in batch
 1. [Python 2.X (Required)](https://www.python.org/downloads/)
 	* Python 2.7 recommended
 
-			      sudo apt-get install python
+	    sudo apt-get install python
 
 2. [ConfigParser (Required)](https://pypi.python.org/pypi/configparser)
 	* Used to Read API Key information
