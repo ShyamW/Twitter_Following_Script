@@ -21,35 +21,35 @@ def loginToTwitter():
 
 """Stores handles into @code companies
 @param file_name
-    file containing one collumn of company twitter handles
-        ex: @company123
-            @company124
-@returns companies
-    list of companies to follow"""
+    file containing one collumn of twitter handles
+        ex: @handle1234
+            @handle1235
+@returns handles
+    list of handles to follow"""
 def readFile(file_name):
     with open (file_name) as f:
-        companies = f.read().splitlines()
-    return companies
+        handles = f.read().splitlines()
+    return handles
 
 
-"""Follows compananies on Twitter
+"""Follows handles on Twitter
 @param companies
-    list of companies to follow
+    list of handles to follow
 @param api
     authenticated api object"""
-def follow(companies, api):
+def follow(handles, api):
     progress = 1
-    for utility_company in companies:
-        api.create_friendship(utility_company)
-        print(str(progress) + 'of' + str(len(companies)))
+    for handle in handles:
+        api.create_friendship(handle)
+        print(str(progress) + 'of' + str(len(handles)))
         progress += 1
 
 
 """Main Method"""
 def main():
     api = loginToTwitter()
-    companies = readFile('handles.txt')
-    follow(companies, api)
+    handles = readFile('handles.txt')
+    follow(handles, api)
 
 
 main()
