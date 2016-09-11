@@ -19,7 +19,7 @@ def loginToTwitter():
     return api
 
 
-"""Stores handles into @code companies
+"""Stores handles into {@code handles}
 @param file_name
     file containing one collumn of twitter handles
         ex: @handle1234
@@ -33,7 +33,7 @@ def readFile(file_name):
 
 
 """Follows handles on Twitter
-@param companies
+@param handles
     list of handles to follow
 @param api
     authenticated api object"""
