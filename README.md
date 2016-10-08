@@ -13,6 +13,6 @@ A script that quickly follows Twitter handles in batch
             pip install ConfigParser
       
 3. [tweepy (Optional)](http://docs.tweepy.org/en/v3.5.0/install.html)
-    * Used to stream and fetch tweets. Unnecessary for Analyzing tweets.
+    * API used to interact with twitter. 
 
             pip install tweepy
